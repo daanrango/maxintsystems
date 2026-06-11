@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+:root {
+  --font-h1: "Montserrat", sans-serif;
+  --font-h2: "Poppins", sans-serif;
+  --font-body: "Red Hat Display", sans-serif;
+  --color-bg-primary: #0a0b0d;
+  --color-bg-secondary: #141618;
+  --color-border: #1e2228;
+  --color-accent: #e8a820;
+  --color-accent-dark: #c8900a;
+  --color-accent-light: #f0c050;
+  --color-text-primary: #f0f2f4;
+  --color-text-secondary: #c0ccd6;
+  --color-text-muted: #8a9ba8;
+}
