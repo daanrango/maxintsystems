@@ -21,6 +21,7 @@ const defaultNavItems: NavItem[] = [
   { label: "Inicio", href: "/" },
   { label: "Empresa", href: "/empresa" },
   { label: "Servicios", href: "/servicios" },
+  { label: "Productos", href: "/productos" },
   { label: "Galeria", href: "/galeria" },
   { label: "Contacto", href: "/contacto" },
 ];
