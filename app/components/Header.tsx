@@ -29,7 +29,7 @@ const defaultNavItems: NavItem[] = [
 export function Header({
   siteName = "Max Integration Security Systems",
   siteNameShort = "MaxIntSystems",
-  logoSrc = "/img/logo.jpeg",
+  logoSrc = "/img/logo.png",
   navItems = defaultNavItems,
 }: HeaderProps) {
   const pathname = usePathname();
