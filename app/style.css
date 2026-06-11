@@ -93,13 +93,25 @@ img {
   color: var(--color-text-primary);
 }
 
+.brand-text {
+  font-size: 1.2rem;
+}
+
 .brand-hex {
   width: 6rem;
   height: 6rem;
 }
 
+.navbar-nav.movil {
+  background-color: var(--color-bg-secondary);
+}
+
+.navbar-nav .movil {
+  background-color: var(--color-bg-secondary);
+}
+
 .navbar-nav li a {
-  color: var(--text-muted);
+  color: var(--color-text-primary);
   font-size: 1.2rem;
   text-transform: uppercase;
   border-bottom: 0.2rem solid transparent;
@@ -113,17 +125,9 @@ img {
   border-color: var(--color-accent-dark);
 }
 
-.navbar-nav li.current_page_item a {
+.navbar-nav li.current-page a {
   color: var(--color-accent);
   border-color: var(--color-accent);
-}
-
-#navbar-maxintsystem .navbar-toggler {
-  border: 1px solid var(--color-text-muted);
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%236a7d8e' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 /*FIN Navegacion principal*/
