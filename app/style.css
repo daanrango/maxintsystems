@@ -114,3 +114,131 @@ img {
 }
 
 /*FIN Navegacion principal*/
+/*INICIO footer */
+.site-footer {
+  background-color: var(--color-bg-primary);
+  border-top: 0.15rem solid var(--color-border);
+  color: var(--color-text-secondary);
+}
+
+.site-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top right,
+    rgba(232, 168, 32, 0.16),
+    transparent 35%
+  );
+  pointer-events: none;
+}
+
+.footer-brand {
+  color: var(--color-text-primary);
+  font-family: var(--font-h1);
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  line-height: 1.5;
+}
+
+.footer-text,
+.footer-contact,
+.footer-bottom {
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+}
+
+.footer-text {
+  margin: 2rem 0rem;
+}
+
+.footer-title {
+  color: var(--color-accent);
+  font-family: var(--font-h2);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.footer-links li,
+.footer-contact li {
+  margin-bottom: 0.7rem;
+}
+
+.footer-links a {
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
+  text-decoration: none;
+  transition:
+    color 0.25s ease,
+    padding-left 0.25s ease;
+}
+
+.footer-links a:hover {
+  color: var(--color-accent-light);
+  padding-left: 0.35rem;
+}
+
+.footer-social {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(232, 168, 32, 0.45);
+  border-radius: 50%;
+  color: var(--color-accent-light);
+  text-decoration: none;
+  font-family: var(--font-h2);
+  font-weight: 700;
+  transition: all 0.25s ease;
+}
+
+.footer-social svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.footer-social:hover {
+  background: var(--color-accent);
+  color: var(--color-bg-primary);
+  transform: translateY(-3px);
+}
+
+.footer-contact a {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.footer-contact a:hover {
+  color: var(--color-accent-light);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(240, 242, 244, 0.08);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer-brand {
+    font-size: 1.5rem;
+  }
+
+  .site-footer {
+    text-align: center;
+  }
+
+  .site-footer .d-flex {
+    justify-content: center;
+  }
+
+  .footer-links a:hover {
+    padding-left: 0;
+  }
+}
+/* FIN footer */
