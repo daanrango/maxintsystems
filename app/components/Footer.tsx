@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { basePath } from "@/lib/basePath";
 
 type SocialLink = {
   label: "Facebook" | "LinkedIn" | "X" | "TikTok";
@@ -22,22 +23,22 @@ const socialsDefault: SocialLink[] = [
   {
     label: "Facebook",
     href: "https://www.instagram.com/max_integration_593/",
-    imageSrc: "/img/facebook.png",
+    imageSrc: `${basePath}/img/facebook.png`,
   },
   {
     label: "LinkedIn",
     href: "https://www.instagram.com/max_integration_593/",
-    imageSrc: "/img/linkedin.png",
+    imageSrc: `${basePath}/img/linkedin.png`,
   },
   {
     label: "X",
     href: "https://www.instagram.com/max_integration_593/",
-    imageSrc: "/img/x.png",
+    imageSrc: `${basePath}/img/x.png`,
   },
   {
     label: "TikTok",
     href: "https://www.instagram.com/max_integration_593/",
-    imageSrc: "/img/tik-tok.png",
+    imageSrc: `${basePath}/img/tik-tok.png`,
   },
 ];
 

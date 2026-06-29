@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { basePath } from "@/lib/basePath";
 
 type NavItem = {
   label: string;
@@ -29,7 +30,7 @@ const defaultNavItems: NavItem[] = [
 export function Header({
   siteName = "Max Integration Security Systems",
   siteNameShort = "MaxIntSystems",
-  logoSrc = "/img/logo.png",
+  logoSrc = `${basePath}/img/logo.png`,
   navItems = defaultNavItems,
 }: HeaderProps) {
   const pathname = usePathname();
