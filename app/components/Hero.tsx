@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { basePath } from "@/lib/basePath";
 
 type HeroProps = {
   title: string;
@@ -11,7 +12,7 @@ export default function Hero({ title, description, image }: HeroProps) {
     <section className="hero relative overflow-hidden flex items-center justify-center">
       {image && (
         <Image
-          src={image}
+          src={basePath + image}
           alt={title}
           fill
           priority
