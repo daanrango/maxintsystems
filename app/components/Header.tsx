@@ -41,7 +41,14 @@ export function Header({
         <div className="w-4/5 mx-auto flex flex-wrap items-center justify-between">
           <Link href="/" className="flex items-center gap-5">
             <div className="brand-hex flex items-center justify-center">
-              <Image src={logoSrc} alt="logo" width={60} height={60} priority />
+              <Image
+                src={logoSrc}
+                alt="logo"
+                width={60}
+                height={60}
+                priority
+                className="w-12 h-12 object-contain"
+              />
             </div>
             <span className="text-white uppercase brand-text block md:hidden">
               {siteNameShort}

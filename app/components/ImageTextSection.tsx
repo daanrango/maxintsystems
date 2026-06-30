@@ -31,7 +31,7 @@ export function ImageTextSection({
           </div>
         </div>
         <div className={imageLeft ? "md:order-1" : ""}>
-          <div className="relative h-[360px] w-full overflow-hidden rounded-2xl">
+          <div className="relative w-full h-150 overflow-hidden rounded-2xl">
             <Image
               src={basePath + imageSrc}
               alt={imageAlt ?? title}
