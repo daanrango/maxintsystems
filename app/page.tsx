@@ -4,6 +4,9 @@ import Hero from "./components/Hero";
 import { ImageTextSection } from "./components/ImageTextSection";
 import { FeatureCardsSection } from "./components/FeatureCardsSection";
 import { GallerySection } from "./components/GallerySection";
+import Image from "next/image";
+import { basePath } from "@/lib/basePath";
+import { Carousel } from "./components/Carousel";
 
 export const metadata: Metadata = {
   title: "Home | MAXINTSYSTEMS",
@@ -95,6 +98,81 @@ export default function Home() {
     },
   ];
 
+  const clients = [
+    {
+      id: 1,
+      content: (
+        <Image
+          src={`${basePath}/img/clients/cliente-1.png`}
+          alt="Cliente 1"
+          width={180}
+          height={90}
+          className="carousel-client-logo"
+        />
+      ),
+    },
+    {
+      id: 2,
+      content: (
+        <Image
+          src={`${basePath}/img/clients/cliente-2.png`}
+          alt="Cliente 2"
+          width={180}
+          height={90}
+          className="carousel-client-logo"
+        />
+      ),
+    },
+    {
+      id: 3,
+      content: (
+        <Image
+          src={`${basePath}/img/clients/cliente-3.png`}
+          alt="Cliente 2"
+          width={180}
+          height={90}
+          className="carousel-client-logo"
+        />
+      ),
+    },
+    {
+      id: 4,
+      content: (
+        <Image
+          src={`${basePath}/img/clients/cliente-4.png`}
+          alt="Cliente 2"
+          width={180}
+          height={90}
+          className="carousel-client-logo"
+        />
+      ),
+    },
+    {
+      id: 5,
+      content: (
+        <Image
+          src={`${basePath}/img/clients/cliente-5.png`}
+          alt="Cliente 2"
+          width={180}
+          height={90}
+          className="carousel-client-logo"
+        />
+      ),
+    },
+    {
+      id: 6,
+      content: (
+        <Image
+          src={`${basePath}/img/clients/cliente-6.png`}
+          alt="Cliente 2"
+          width={180}
+          height={90}
+          className="carousel-client-logo"
+        />
+      ),
+    },
+  ];
+
   return (
     <>
       <Hero
@@ -176,6 +254,15 @@ export default function Home() {
         title="Galería"
         description="Conoce algunos de nuestros trabajos, instalaciones y soluciones implementadas."
         images={galleryImages}
+      />
+      <Carousel
+        title="Nuestros clientes"
+        description="Empresas que confían en nuestras soluciones de seguridad."
+        items={clients}
+        slidesPerView={5}
+        spaceBetween={5}
+        autoplay
+        delay={3000}
       />
     </>
   );
