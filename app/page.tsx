@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Bell, Camera, Check, Fingerprint, Zap } from "lucide-react";
+import { Bell, Camera, Fingerprint, Zap } from "lucide-react";
 import Hero from "./components/Hero";
 import { ImageTextSection } from "./components/ImageTextSection";
 import { FeatureCardsSection } from "./components/FeatureCardsSection";
+import { GallerySection } from "./components/GallerySection";
 
 export const metadata: Metadata = {
   title: "Home | MAXINTSYSTEMS",
@@ -40,6 +41,57 @@ export default function Home() {
       description:
         "Instalaciones seguras, mantenimiento y soporte técnico especializado.",
       icon: Zap,
+    },
+  ];
+
+  const galleryImages = [
+    {
+      id: 1,
+      src: "/img/hero/maxintsystems-1.jpg",
+      alt: "Instalación de cámaras de seguridad",
+      title: "Videovigilancia",
+    },
+    {
+      id: 2,
+      src: "/img/hero/maxintsystems-2.jpg",
+      alt: "Control de acceso",
+      title: "Control de acceso",
+    },
+    {
+      id: 3,
+      src: "/img/hero/maxintsystems-3.jpg",
+      alt: "Seguridad empresarial",
+      title: "Empresas",
+    },
+    {
+      id: 4,
+      src: "/img/hero/maxintsystems-4.jpg",
+      alt: "Seguridad para hogares",
+      title: "Hogares",
+    },
+    {
+      id: 5,
+      src: "/img/hero/maxintsystems-5.jpg",
+      alt: "Seguridad para hogares",
+      title: "Hogares",
+    },
+    {
+      id: 6,
+      src: "/img/hero/maxintsystems-6.jpg",
+      alt: "Seguridad para hogares",
+      title: "Hogares",
+    },
+    {
+      id: 7,
+      src: "/img/hero/maxintsystems-7.jpg",
+      alt: "Seguridad para hogares",
+      title: "Hogares",
+    },
+    {
+      id: 8,
+      src: "/img/hero/maxintsystems-8.jpg",
+      alt: "Seguridad para hogares",
+      title: "Hogares",
     },
   ];
 
@@ -120,6 +172,11 @@ export default function Home() {
         }
       />
       <FeatureCardsSection title="Nuestros servicios" items={services} />
+      <GallerySection
+        title="Galería"
+        description="Conoce algunos de nuestros trabajos, instalaciones y soluciones implementadas."
+        images={galleryImages}
+      />
     </>
   );
 }

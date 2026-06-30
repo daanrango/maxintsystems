@@ -16,7 +16,7 @@ export default function Hero({ title, description, image }: HeroProps) {
           alt={title}
           fill
           priority
-          className="img-fluid img-hero position-absolute top-0 start-0 w-100 h-100"
+          className="img-fluid img-hero position-absolute top-0 w-100 h-100"
         />
       )}
 
