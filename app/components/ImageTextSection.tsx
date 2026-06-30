@@ -22,13 +22,11 @@ export function ImageTextSection({
   const imageLeft = imagePosition === "left";
 
   return (
-    <section id={id} className="py-20">
+    <section id={id} className="pt-20">
       <div className="w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className={imageLeft ? "md:order-2" : ""}>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">{title}</h2>
-          <div className="space-y-4 text-base md:text-lg leading-relaxed opacity-80">
-            {content}
-          </div>
+          <div className="its-content space-y-4 text-2xl">{content}</div>
         </div>
         <div className={imageLeft ? "md:order-1" : ""}>
           <div className="relative w-full h-150 overflow-hidden rounded-2xl">

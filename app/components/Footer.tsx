@@ -33,7 +33,7 @@ const subMenuServices: SubMenu[] = [
 
 export function Footer() {
   return (
-    <footer className="site-footer relative overflow-hidden">
+    <footer className="site-footer relative overflow-hidden mt-20">
       <div className="w-4/5 mx-auto pt-20">
         <div className="grid grid-cols-12">
           <div className="col-span-12 mb-8 md:col-span-3 md:mb-0">
