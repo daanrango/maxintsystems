@@ -139,7 +139,7 @@ img {
   font-size: 1.8rem;
   font-weight: 800;
   letter-spacing: 0.09em;
-  line-height: 1.5;
+  margin-bottom: 3rem;
 }
 
 .footer-text,
@@ -150,8 +150,9 @@ img {
   font-size: 1.2rem;
 }
 
-.footer-text {
-  margin: 2rem 0rem;
+.footer-text,
+.footer-contact {
+  margin-bottom: 3rem;
 }
 
 .footer-title {
@@ -161,17 +162,19 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  margin-bottom: 3rem;
 }
 
 .footer-links li,
 .footer-contact li {
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer-links a {
   color: var(--color-text-secondary);
   font-family: var(--font-body);
   text-decoration: none;
+  font-size: medium;
   transition:
     color 0.25s ease,
     padding-left 0.25s ease;
@@ -223,6 +226,25 @@ img {
   border-top: 1px solid rgba(240, 242, 244, 0.08);
 }
 
+/* Mobile */
+@media (max-width: 768px) {
+  .footer-brand {
+    font-size: 1.5rem;
+  }
+
+  .site-footer {
+    text-align: center;
+  }
+
+  .site-footer .d-flex {
+    justify-content: center;
+  }
+
+  .footer-links a:hover {
+    padding-left: 0;
+  }
+}
+/* FIN footer */
 /*INICIO hero page*/
 .hero {
   height: 85vh;
