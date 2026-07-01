@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Hero from "../components/Hero";
 import { ImageTextSection } from "../components/ImageTextSection";
-import { FeatureCardsSection } from "../components/FeatureCardsSection";
 import {
   Bell,
   Cable,
