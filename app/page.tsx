@@ -13,7 +13,12 @@ export const metadata: Metadata = {
   title: "Home | MAXINTSYSTEMS",
 };
 
-export default function Home() {
+function delay(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+export default async function Home() {
+  await delay(3000);
   const services = [
     {
       id: 1,

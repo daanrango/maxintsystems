@@ -8,11 +8,46 @@ import { MessageCircle } from "lucide-react";
 
 export default function FeaturedProducts() {
   const [products, setProducts] = useState<Product[]>([]);
+  const [loading, setLoading] = useState(true);
   const whatsappNumber = "593998127022";
 
   useEffect(() => {
-    getFeaturedProducts().then(setProducts).catch(console.error);
+    getFeaturedProducts()
+      .then(setProducts)
+      .catch(console.error)
+      .finally(() => setLoading(false));
   }, []);
+
+  if (loading) {
+    return (
+      <section className="featured-products py-20 mt-20">
+        <div className="w-4/5 mx-auto">
+          <span className="feature-span uppercase tracking-widest text-sm">
+            Destacados
+          </span>
+
+          <h2 className="feature-title text-4xl md:text-5xl font-bold mt-3">
+            Productos destacados
+          </h2>
+
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4 mt-12">
+            {[1, 2, 3, 4].map((item) => (
+              <div
+                key={item}
+                className="feature-products-card overflow-hidden animate-pulse"
+              >
+                <div className="h-60 bg-[#1e2228]" />
+                <div className="p-6">
+                  <div className="h-4 w-32 bg-[#1e2228] rounded mb-4" />
+                  <div className="h-6 w-full bg-[#1e2228] rounded" />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   if (products.length === 0) return null;
 

@@ -43,7 +43,7 @@ export default function RootLayout({
         className={`${montserrat.variable} ${poppins.variable} ${redHat.variable}`}
       >
         <Header />
-        <main>{children}</main>
+        <main className="pb-20">{children}</main>
         <Footer />
       </body>
     </html>
