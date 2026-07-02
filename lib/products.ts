@@ -28,3 +28,9 @@ export async function getProducts(): Promise<Product[]> {
     ...doc.data(),
   })) as Product[];
 }
+
+export async function getFeaturedProducts(): Promise<Product[]> {
+  const products = await getProducts();
+
+  return products.filter((product) => product.featured === true);
+}

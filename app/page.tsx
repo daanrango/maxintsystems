@@ -7,6 +7,7 @@ import { GallerySection } from "./components/GallerySection";
 import Image from "next/image";
 import { basePath } from "@/lib/basePath";
 import { Carousel } from "./components/Carousel";
+import FeaturedProducts from "./components/FeaturedProducts";
 
 export const metadata: Metadata = {
   title: "Home | MAXINTSYSTEMS",
@@ -249,6 +250,7 @@ export default function Home() {
           </>
         }
       />
+      <FeaturedProducts />
       <FeatureCardsSection title="Nuestros servicios" items={services} />
       <GallerySection
         title="Galería"

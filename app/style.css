@@ -523,3 +523,59 @@ img {
   opacity: 1;
   transform: scale(1.05);
 }
+
+.featured-products {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+.feature-span {
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  border-radius: 1rem;
+  padding: 0.2rem 1rem;
+}
+
+.feature-title {
+  margin-bottom: 1rem;
+}
+
+.feature-products-card {
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+.feature-products-card:hover {
+  transform: translateY(-0.5rem);
+}
+
+.feature-products-card:hover .feature-span-card {
+  background-color: var(--color-accent);
+  color: var(--color-bg-primary);
+}
+
+.feature-span-card {
+  background-color: transparent;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent-dark);
+  border-radius: 1rem;
+  padding: 0.2rem 1rem;
+}
+
+.feature-product-title {
+  margin-bottom: 1rem;
+}
+
+.feature-products-link {
+  border: 1px solid #25d366;
+  color: #25d366;
+  border-radius: 0.5rem;
+  transition: all 0.25s ease;
+}
+
+.feature-products-card:hover .feature-products-link {
+  background-color: #25d366;
+  color: var(--color-bg-primary);
+}

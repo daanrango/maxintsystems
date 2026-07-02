@@ -60,7 +60,7 @@ export default function ProductosClient() {
             placeholder="Buscar producto..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full lg:w-[420px] rounded-full border border-[#1e2228] bg-[#141618] px-6 py-4 text-white outline-none placeholder:text-gray-500 focus:border-[#e8a820]"
+            className="w-full rounded-full border border-[#1e2228] bg-[#141618] px-6 py-4 text-white outline-none placeholder:text-gray-500 focus:border-[#e8a820]"
           />
 
           <div className="flex flex-wrap gap-3">
